@@ -9,7 +9,7 @@ const Start: React.FC = () => {
     <section className="relative h-full w-full bg-[#F7F4ED] px-4 py-12 sm:px-[10px] md:px-[50px] lg:px-[80px] lg:py-24 2xl:px-[140px]">
       <div className="absolute right-[150px] top-[370px] hidden lg:block">
         <Link href={"/menu"}>
-          <Button className="flex flex-row gap-2 rounded-full px-7 py-7 text-center font-playfair text-sm font-[500] capitalize leading-[80%] tracking-[1px] text-[#fff]">
+          <Button className="flex flex-row gap-2 rounded-full bg-[#317299] px-7 py-7 text-center font-playfair text-sm font-[500] capitalize leading-[80%] tracking-[1px] text-[#fff]">
             View Menu <ArrowRight className="w-4" />
           </Button>
         </Link>
@@ -22,7 +22,7 @@ const Start: React.FC = () => {
           </h3>
           <div className="flex justify-center pt-6 lg:hidden">
             <Link href={"/menu"}>
-              <Button className="flex flex-row gap-2 rounded-full px-7 py-7 text-center font-playfair text-sm font-[500] capitalize leading-[80%] tracking-[1px] text-[#fff]">
+              <Button className="flex flex-row gap-2 rounded-full bg-[#317299] px-7 py-7 text-center font-playfair text-sm font-[500] capitalize leading-[80%] tracking-[1px] text-[#fff]">
                 View Menu <ArrowRight className="w-4" />
               </Button>
             </Link>

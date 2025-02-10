@@ -20,7 +20,7 @@ const Hero: React.FC = () => {
         </h1>
 
         <Link href={"/menu"}>
-          <Button className="flex flex-row gap-2 rounded-full px-7 py-7 text-center font-playfair text-sm font-[500] capitalize leading-[80%] tracking-[1px] text-[#fff]">
+          <Button className="flex flex-row gap-2 rounded-full bg-[#317299] px-7 py-7 text-center font-playfair text-sm font-[500] capitalize leading-[80%] tracking-[1px] text-[#fff]">
             View Menu <ArrowRight className="w-4" />
           </Button>
         </Link>
