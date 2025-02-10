@@ -1,0 +1,85 @@
+import "@/styles/globals.css";
+import "@/styles/lines.css";
+import "@/styles/ham.css";
+import { cn } from "@/lib/utils";
+import { type Metadata } from "next";
+import {
+  Oswald,
+  Roboto,
+  Playfair_Display,
+  Italiana,
+  Mrs_Saint_Delafield,
+  Cormorant,
+  Inter,
+} from "next/font/google";
+import Providers from "@/app/Providers";
+
+export const metadata: Metadata = {
+  title: "Cafe_Pera",
+  description: "Cafe_Pera",
+  // icons: [{ rel: "icon", url: "/Nur.svg" }],
+};
+
+const oswald = Oswald({
+  subsets: ["latin"],
+  variable: "--font-oswald",
+  weight: ["200", "300", "400", "500", "600", "700"],
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  weight: ["200", "300", "400", "500", "600", "700"],
+});
+
+const cormorant = Cormorant({
+  subsets: ["latin"],
+  variable: "--font-cormorant",
+  weight: ["300", "400", "500", "700"],
+});
+
+const roboto = Roboto({
+  subsets: ["latin"],
+  variable: "--font-roboto",
+  weight: ["100", "300", "400", "500", "700", "900"],
+});
+
+const italiana = Italiana({
+  subsets: ["latin"],
+  variable: "--font-italiana",
+  weight: ["400"],
+});
+
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  variable: "--font-playfair",
+  weight: ["400", "500", "600", "700", "800", "900"],
+});
+
+const saint = Mrs_Saint_Delafield({
+  subsets: ["latin"],
+  variable: "--font-saint",
+  weight: ["400"],
+});
+export default function RootLayout({
+  children,
+}: Readonly<{ children: React.ReactNode }>) {
+  return (
+    <html lang="en" suppressHydrationWarning>
+      <body
+        className={cn(
+          "theme-custom font-forum flex min-h-screen antialiased",
+          oswald.variable,
+          roboto.variable,
+          playfair.variable,
+          italiana.variable,
+          saint.variable,
+          cormorant.variable,
+          inter.variable,
+        )}
+      >
+        <Providers>{children}</Providers>
+      </body>
+    </html>
+  );
+}
