@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button";
 import { useRestaurant } from "@/context/RestaurantContext";
 import type { EmblaOptionsType } from "embla-carousel";
 import { ArrowRight } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
 
 const OPTIONS: EmblaOptionsType = { loop: true };
